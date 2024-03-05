@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCube from './projectCube';
+import ProjectCube from './thumbnailProj';
 import CvButton from "../buttons/cvBtn";
 
 const Projects = () => {
