@@ -1,16 +1,26 @@
 import React from "react";
 
-function ProjectCube = () => {
+interface Props {
+    link: string;
+    imgSrc: string;
+    title: string;
+    imgDescription: string;
+};
+
+
+//({}:Props) --> Object destructuring
+const ProjectCube = ({ link, imgSrc, title, imgDescription }: Props) => {
     return (
-        <div className="projectCube">
+        <a href={link}>
 
             <div className="image">
-                <p>Image</p>
+                <img src={imgSrc} alt={`screenshot of ${title}`} />
             </div>
             <div className="imageDetails">
-                <p>Image Details</p>
+                <p>{title}</p>
+                <p>{imgDescription}</p>
             </div>
-        </div>
+        </a>
     )
 }
 export default ProjectCube;

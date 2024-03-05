@@ -1,11 +1,11 @@
 import React from "react";
 
-function Contact = () => {
+const Contact = () => {
     return (
         <div className="contact">
 
             <div className="form">
-            //input fields, send button
+            {/* input fields, send button */}
             </div>
 
             <div className="popup">

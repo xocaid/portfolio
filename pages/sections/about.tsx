@@ -1,18 +1,18 @@
 import React from "react";
 
-function About = () => {
+const About = () => {
     return (
         <div className="about">
             <div className="blurb">
-            //Will be in the middle, centered text
+            {/* Will be in the middle, centered text */}
             </div>
 
-            //Both devtools will have same layout/css
+            {/* Both devtools will have same layout/css */}
             <div className="devtools">
-                <p>'Languages'</p>
+                <p>Languages</p>
             </div>
             <div className="devtools">
-                <p>'Tools'</p>
+                <p>Tools</p>
             </div>
         </div>
     )

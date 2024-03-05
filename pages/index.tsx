@@ -4,6 +4,7 @@ import Footer from "./margins/footer";
 import Landing from "./sections/landing";
 import About from "./sections/about";
 import Projects from "./sections/projects";
+import Contact from "./sections/contact";
 
 
 function Home() {
