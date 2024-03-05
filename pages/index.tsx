@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Header from './margins/header';
 import Footer from "./margins/footer";
+import Landing from "./sections/landing";
+import About from "./sections/about";
+import Projects from "./sections/projects";
 
-const inter = Inter({ subsets: ["latin"] });
 
 function Home() {
   return (
@@ -16,13 +15,17 @@ function Home() {
       <div>
         <Header />
       </div>
-      <main className={`${styles.main} ${inter.className}`}>
+      <div>
+        <Landing />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
 
-      </main>
       <div>
         <Footer />
       </div>
-    </div>
+    </div >
   );
 }
 export default Home;
