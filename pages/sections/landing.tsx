@@ -1,6 +1,7 @@
 import React from "react";
 import AvatarMaker from '../images/AvatarMaker.png'
 
+
 const Landing = () => {
     return (
         <div className="landing">

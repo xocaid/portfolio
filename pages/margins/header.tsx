@@ -1,17 +1,31 @@
 import React from "react";
-import About from "../sections/about";
-import Projects from "../sections/projects";
-import Contact from "../sections/contact";
+import NavBar from "./navbar";
+import { Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
     return (
-        <div className="header">
-
-            <p>Header</p>
+        <Container>
             <div>
-                {/* Tabs for Header */}
+                Img Logo will go here
             </div>
-        </div>
+
+            <div>
+                <NavBar />
+            </div>
+
+            <div>
+                <FontAwesomeIcon className="fa-2x" icon={faGithub} />
+                <FontAwesomeIcon className="fa-2x" icon={faLinkedin} />
+            </div>
+
+            <div>
+                <Button>Download Resume</Button>
+            </div>
+        </Container>
     )
 }
 export default Header;
