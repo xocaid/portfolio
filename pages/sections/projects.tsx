@@ -8,7 +8,7 @@ const Projects = () => {
     const sewWise = 'SewWise is a repository for sewing enthusiasts to organize, catalog, and document their sewing patterns, offering features like photo attachments, notes, a pattern library, ownership marking, usage tracking, and wishlists.';
 
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <ProjectCube
                 link='https://github.com/xocaid/CycleRoute'
                 imgSrc='https://github.com/xocaid/CycleRoute/blob/main/client/src/components/Images/cycleRouteBanner.png?raw=true'

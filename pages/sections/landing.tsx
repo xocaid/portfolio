@@ -1,22 +1,38 @@
 import React from "react";
 import AvatarMaker from '../images/AvatarMaker.png'
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 
 const Landing = () => {
     return (
-        <div className="landing">
-            <div className="avatar">
-                {/* Will be on the left side, in a circle border */}
-                <img src={AvatarMaker.src}></img>
-            </div>
+        <Container>
+            <Row>
 
-            <div className="welcome">
-                {/* Will be on the right side, square/rectangle shape, no border */}
-                <p>Welcome....</p>
-                <p>firstName lastName</p>
-                <p>Brief Description/Blurb</p>
-            </div>
-        </div>
+                <Col>
+                    <div className="avatar">
+                        {/* Will be on the left side, in a circle border */}
+                        <img src={AvatarMaker.src}></img>
+                    </div>
+                </Col>
+
+                <Col>
+                    <div className="welcome">
+                        {/* Will be on the right side, square/rectangle shape, no border */}
+                        <h1>Welcome</h1>
+                        <h2>Xochitl Cruz, Software Engineer</h2>
+                        <p>
+                            Xochitl is a Software Engineer with a strong foundation in web technologies, including JavaScript, React, and TypeScript.
+                            Since beginning her programming career in 2022, Xochitl has contributed to major projects at Sony PlayStation, where she redesigned React components, separated application functionality from monolithic codebases, and implemented robust error handling and telemetry systems.
+                        </p>
+                    </div>
+                </Col>
+            </Row>
+
+
+
+        </Container>
     )
 }
 export default Landing;

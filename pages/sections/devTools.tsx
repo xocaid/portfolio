@@ -6,10 +6,11 @@ interface Props {
     description: Array<string>;
 }
 
+//Used in the About section
 const DevTools = ({ title, description }: Props) => {
     return (
         <div className="devtools">
-            <p>{title}</p>
+            <p>{title}:</p>
             <ul>{description.map((item, index) => (
                 <li key={index}>
                     {item}
