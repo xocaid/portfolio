@@ -28,6 +28,14 @@ const JobDes = ({ title, company, children }: JobDesProps) => {
 const About = () => {
     return (
         <Container className="about" id="about">
+
+            <JobDes
+                title="Project Manager & Software Engineer"
+                company="Freelance">
+                <p>
+
+                </p>
+            </JobDes>
             <JobDes
                 title="Software Engineer I"
                 company="Sony Interactive Entertainment">
