@@ -9,13 +9,12 @@ import Contact from "./sections/contact";
 
 function Home() {
   return (
-    <div>
+<>
+
       <Head>
         <title>Portfolio</title>
       </Head>
-      <div>
         <Header />
-      </div>
       <div>
         <Landing />
         <About />
@@ -26,7 +25,7 @@ function Home() {
       <div>
         <Footer />
       </div>
-    </div >
+</>
   );
 }
 export default Home;

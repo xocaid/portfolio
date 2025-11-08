@@ -1,5 +1,6 @@
 import { describe } from "node:test";
 import React from "react";
+import { BlueSection } from "../margins/blue-section";
 
 interface Props {
     title: string;
@@ -9,7 +10,7 @@ interface Props {
 //Used in the About section
 const DevTools = ({ title, description }: Props) => {
     return (
-        <div className="devtools">
+        <BlueSection>
             <h3>{title}:</h3>
             <ul>{description.map((item, index) => (
                 <li key={index}>
@@ -17,7 +18,7 @@ const DevTools = ({ title, description }: Props) => {
                 </li>
             ))}
             </ul>
-        </div>
+        </BlueSection>
     )
 }
 export default DevTools;

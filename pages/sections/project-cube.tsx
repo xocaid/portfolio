@@ -11,16 +11,15 @@ interface Props {
 //({}:Props) --> Object destructuring
 const ProjectCube = ({ link, imgSrc, title, imgDescription }: Props) => {
     return (
-        <a href={link}>
-
+        <div>
             <div className="image">
                 <img src={imgSrc} alt={`screenshot of ${title}`} />
             </div>
             <div className="imageDetails">
-                <p>{title}</p>
+                <h2><a href={link}>{title}</a></h2>
                 <p>{imgDescription}</p>
             </div>
-        </a>
+        </div>
     )
 }
 export default ProjectCube;

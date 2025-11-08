@@ -1,9 +1,8 @@
 import React from "react";
+import { BlueSection } from "../margins/blue-section";
 import { ReactNode } from "react";
 import DevTools from "./devTools";
-import { Container } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 interface JobDesProps {
     title: string;
@@ -13,7 +12,7 @@ interface JobDesProps {
 
 const JobDes = ({ title, company, children }: JobDesProps) => {
     return (
-        <div>
+        <BlueSection>
             <div>
                 <h2>{title}</h2>
                 <h3>{company}</h3>
@@ -21,7 +20,7 @@ const JobDes = ({ title, company, children }: JobDesProps) => {
             <div>
                 {children}
             </div>
-        </div>
+        </BlueSection>
     )
 }
 
@@ -56,20 +55,20 @@ const About = () => {
                 </p>
             </JobDes>
 
-            <Row>
-                <Col>
-                    <DevTools
-                        title='Languages/Frameworks'
-                        description={['JavaScript, TypeScript', 'React.js', 'Node.js', 'Express.js', 'PostgreSQL']}
-                    />
-                </Col>
-                <Col>
-                    <DevTools
-                        title='DevTools'
-                        description={['Git', 'Jest', 'Jira', 'Confluence', 'yarn', 'npm', 'GitHub']}
-                    />
-                </Col>
-            </Row>
+                <Row>
+                    <Col>
+                        <DevTools
+                            title='Languages/Frameworks'
+                            description={['JavaScript, TypeScript', 'React.js', 'Node.js', 'Express.js', 'PostgreSQL']}
+                        />
+                    </Col>
+                    <Col>
+                        <DevTools
+                            title='DevTools'
+                            description={['Git', 'Jest', 'Jira', 'Confluence', 'yarn', 'npm', 'GitHub']}
+                        />
+                    </Col>
+                </Row>
         </Container>
     )
 }

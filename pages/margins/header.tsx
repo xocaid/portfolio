@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./navbar";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -8,24 +8,30 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
     return (
-        <Container>
-            <div>
-                Img Logo will go here
-            </div>
+        <div className="header">
+            <Container >
+                <Row>
+                    <Col>
+                        <div>
+                            Img Logo will go here
+                        </div>
+                    </Col>
 
-            <div>
-                <NavBar />
-            </div>
+                    <Col>
+                        <NavBar />
+                    </Col>
 
-            <div>
-                <FontAwesomeIcon className="fa-2x" icon={faGithub} />
-                <FontAwesomeIcon className="fa-2x" icon={faLinkedin} />
-            </div>
+                    <Col>
+                        <FontAwesomeIcon className="fa-2x" icon={faGithub} />
+                        <FontAwesomeIcon className="fa-2x" icon={faLinkedin} />
+                    </Col>
 
-            <div>
-                <Button>Download Resume</Button>
-            </div>
-        </Container>
+                    <Col>
+                        <Button>Download Resume</Button>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     )
 }
 export default Header;
