@@ -1,4 +1,7 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
 
 interface Props {
     link: string;
@@ -11,15 +14,16 @@ interface Props {
 //({}:Props) --> Object destructuring
 const ProjectCube = ({ link, imgSrc, title, imgDescription }: Props) => {
     return (
-        <div>
-            <div className="image">
-                <img src={imgSrc} alt={`screenshot of ${title}`} />
-            </div>
-            <div className="imageDetails">
-                <h2><a href={link}>{title}</a></h2>
-                <p>{imgDescription}</p>
-            </div>
-        </div>
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={imgSrc} />
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>
+                    {imgDescription}
+                </Card.Text>
+                <Button variant="primary">{title}</Button>
+            </Card.Body>
+        </Card>
     )
 }
 export default ProjectCube;
