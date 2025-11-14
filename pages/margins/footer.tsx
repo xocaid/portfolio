@@ -11,7 +11,7 @@ const Footer = () => {
                 <a href='https://github.com/xocaid' title="GitHub_Icon">
                     <FaGithub />
                 </a>
-                <p>Copyright &copy; 2025 Portfolio. All Right Reserved.</p>
+                <p className="m-0">Copyright &copy; 2025 Portfolio. All Right Reserved.</p>
             </div>
         </div>
     )

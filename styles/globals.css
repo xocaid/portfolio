@@ -10,32 +10,50 @@
 }
 
 body {
-  --bs-body-bg: var(--brand-carolina-blue);
+  background-image: url('/images/geopattern.svg');
   --bs-body-color: white;
 }
 
 .bg-portfolio-yinmn-blue {
-  background-color: rgba(68, 94, 147, 0.92);
+  background-color: rgba(68, 94, 147, 0.7);
 }
 
-.header {
-  background-color: var(--brand-rose-red);
-  color: #FCECC9;
-}
-
+.header,
 .footer {
-  background-color: var(--brand-rose-red);
-  color: #FCECC9;
+  background: radial-gradient(circle, hsl(41, 89%, 82%) 10%, transparent 11%);
+  background-size: 1em 1em;
+  background-color: var(--brand-dutch-white);
+  color: var(--brand-rose-red);
 }
 
 .navbar-nav {
-  --bs-navbar-color: #FCECC9;
+  --bs-navbar-color: var(--brand-rose-red);
+  font-weight: bold;
+  --bs-nav-link-hover-color: var(--brand-dutch-white);
+}
+
+.nav-link {
+  background-color: var(--brand-dutch-white);
+}
+
+.nav-link:hover {
+  background-color: var(--brand-rose-red);
 }
 
 .btn.btn-primary {
-  --bs-btn-bg: var(--brand-yinmn-blue);
+  --bs-btn-bg: var(--brand-rose-red);
   --bs-btn-border-color: var(--brand-dutch-white);
   --bs-btn-hover-bg: var(--brand-cherry-blossom-pink);
-  --bs-btn-hover-color: var(--brand-yinmn-blue);
-  --bs-btn-hover-border-color: var(--brand-dutch-white);
+  --bs-btn-hover-border-color: var(--brand-rose-red);
+  --bs-btn-hover-color: var(--brand-rose-red);
+  --bs-btn-font-weight: bold;
+}
+.logo-rect{
+  background-color: red;
+  background-clip:content-box;
+}
+
+.card{
+  background-color:var(--brand-carolina-blue);
+  color:rgb(24, 41, 114);
 }

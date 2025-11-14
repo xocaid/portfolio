@@ -1,5 +1,4 @@
 import React from "react";
-import AvatarMaker from '../images/AvatarMaker.png'
 import { BlueSection } from "../margins/blue-section";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -12,7 +11,7 @@ const Landing = () => {
                     <Col>
                         <div className="avatar">
                             {/* Will be on the left side, in a circle border */}
-                            <img src={AvatarMaker.src}></img>
+                            <img src='/images/AvatarMaker.png'></img>
                         </div>
                     </Col>
 

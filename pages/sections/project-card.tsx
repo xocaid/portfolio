@@ -12,12 +12,12 @@ interface Props {
 
 
 //({}:Props) --> Object destructuring
-const ProjectCube = ({ link, imgSrc, title, imgDescription }: Props) => {
+const ProjectCard = ({ link, imgSrc, title, imgDescription }: Props) => {
     return (
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={imgSrc} />
             <Card.Body>
-                <Card.Title>{title}</Card.Title>
+                <Card.Title >{title}</Card.Title>
                 <Card.Text>
                     {imgDescription}
                 </Card.Text>
@@ -26,4 +26,4 @@ const ProjectCube = ({ link, imgSrc, title, imgDescription }: Props) => {
         </Card>
     )
 }
-export default ProjectCube;
+export default ProjectCard;

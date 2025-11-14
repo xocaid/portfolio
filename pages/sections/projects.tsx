@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCube from './project-cube';
+import ProjectCube from './project-card';
 import CvButton from "../buttons/cvBtn";
 import { Container } from "react-bootstrap";
 import { BlueSection } from "../margins/blue-section";

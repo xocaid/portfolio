@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+
 const Header = () => {
     return (
         <div className="header">
@@ -13,7 +14,9 @@ const Header = () => {
                 <Row>
                     <Col>
                         <div>
-                            Img Logo will go here
+                            <img 
+                            className="logo-rect"
+                            src='/images/logo_rectangle.svg'/>
                         </div>
                     </Col>
 
