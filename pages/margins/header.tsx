@@ -14,9 +14,9 @@ const Header = () => {
                 <Row>
                     <Col>
                         <div>
-                            <img 
-                            className="logo-rect"
-                            src='/images/logo_rectangle.svg'/>
+                            <img
+                                className="logo-rect"
+                                src='/images/logo_rectangle.svg' />
                         </div>
                     </Col>
 
@@ -25,8 +25,8 @@ const Header = () => {
                     </Col>
 
                     <Col>
-                        <FontAwesomeIcon className="fa-2x" icon={faGithub} />
-                        <FontAwesomeIcon className="fa-2x" icon={faLinkedin} />
+                        <a href="https://github.com/xocaid/"><FontAwesomeIcon className="fa-2x" icon={faGithub} /></a>
+                        <a href="https://www.linkedin.com/in/xochitlca/"><FontAwesomeIcon className="fa-2x" icon={faLinkedin} /></a>
                     </Col>
 
                     <Col>
