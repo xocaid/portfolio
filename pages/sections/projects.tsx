@@ -15,7 +15,7 @@ const Projects = () => {
                 <Row>
                     <ProjectCube
                         link='https://github.com/xocaid/CycleRoute'
-                        imgSrc='https://github.com/xocaid/CycleRoute/blob/main/client/src/components/Images/cycleRouteBanner.png?raw=true'
+                        imgSrc='https://github.com/xocaid/CycleRoute/blob/main/client/src/components/Images/cycleRouteLogoSquare.png?raw=true'
                         title='CycleRoute'
                         imgDescription={cycleRoute} />
 
