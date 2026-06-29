@@ -1,21 +1,21 @@
 import React from "react";
 import NavBar from "./navbar";
 import { Container, Row, Col } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { Button } from "react-bootstrap";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 const Header = () => {
     return (
         <div className="header">
             <Container >
-                <Row>
+                <Row className="align-items-center">
                     <Col>
                         <div>
                             <img
-                                className="logo-rect"
+                                className="logo-rect w-75"
                                 src='/images/logo_rectangle.svg' />
                         </div>
                     </Col>
@@ -24,14 +24,14 @@ const Header = () => {
                         <NavBar />
                     </Col>
 
-                    <Col>
+                    {/* <Col>
                         <a href="https://github.com/xocaid/"><FontAwesomeIcon className="fa-2x" icon={faGithub} /></a>
                         <a href="https://www.linkedin.com/in/xochitlca/"><FontAwesomeIcon className="fa-2x" icon={faLinkedin} /></a>
-                    </Col>
+                    </Col> */}
 
-                    <Col>
+                    {/* <Col>
                         <Button>Download Resume</Button>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </div>

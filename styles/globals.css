@@ -15,20 +15,54 @@ body {
 }
 
 .bg-portfolio-yinmn-blue {
-  background-color: rgba(68, 94, 147, 0.7);
+  background-color: rgba(68, 94, 147, 0.85);
 }
 
+/* HEADER/FOOTER */
 .header,
 .footer {
   background: radial-gradient(circle, hsl(41, 89%, 82%) 10%, transparent 11%);
   background-size: 1em 1em;
   background-color: var(--brand-dutch-white);
   color: var(--brand-rose-red);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
+/* HEADINGS */
+h1,
+.h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+h2,
+.h2 {
+  font-weight: 300;
+  font-size: 36px;
+}
+h3, .h3{
+  font-weight: 700;
+  font-size: 24px;
+}
+h4, .h4{
+  font-weight: 400;
+  font-size: 20px;
+}
+h5, .h5{
+  font-weight: 400;
+  font-size: 14px;
+}
+p,
+.p {
+  font-weight: 350;
+  font-size: 18px;
+}
+
+/* NAVIGATION BAR */
 .navbar-nav {
   --bs-navbar-color: var(--brand-rose-red);
-  font-weight: bold;
+  /* font-weight: bold; */
   --bs-nav-link-hover-color: var(--brand-dutch-white);
 }
 
@@ -40,6 +74,12 @@ body {
   background-color: var(--brand-rose-red);
 }
 
+.nav-font {
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
 .btn.btn-primary {
   --bs-btn-bg: var(--brand-rose-red);
   --bs-btn-border-color: var(--brand-dutch-white);
@@ -48,12 +88,36 @@ body {
   --bs-btn-hover-color: var(--brand-rose-red);
   --bs-btn-font-weight: bold;
 }
-.logo-rect{
-  background-color: red;
-  background-clip:content-box;
+
+.logo-rect {
+  /* background-color: red; */
+  background-clip: content-box;
 }
 
-.card{
-  background-color:var(--brand-carolina-blue);
-  color:rgb(24, 41, 114);
+.card {
+  /* background-color:var(--brand-carolina-blue); */
+  color: rgb(24, 41, 114);
+}
+
+.social-icon {
+  color: var(--brand-dutch-white);
+  font-size: 6em;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+.resume {
+  background-color: var(--brand-dutch-white);
+  color: var(--brand-rose-red);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.resume:hover {
+  background-color: white;
+  color: var(--brand-rose-red);
 }

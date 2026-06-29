@@ -7,7 +7,7 @@ interface BlueSectionProps {
 
 export const BlueSection = ({ children, className }: BlueSectionProps) => {
     return (
-        <section className={`bg-portfolio-yinmn-blue rounded p-2 m-3 ${className}`}>
+        <section className={`rounded p-2 ${className}`}>
             <div>
                 {children}
             </div>
