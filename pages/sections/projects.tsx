@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCube from './project-card';
-import CvButton from "../buttons/cvBtn";
 import { Container, Row } from "react-bootstrap";
 import { BlueSection } from "../margins/blue-section";
 
@@ -32,9 +31,6 @@ const Projects = () => {
                         title='SeWise'
                         imgDescription={sewWise} />
                 </Row>
-
-                {/* add cv button, will have different css from the header */}
-                <CvButton />
             </BlueSection>
         </Container>
     )
