@@ -1,8 +1,7 @@
 import React from "react";
-import { BlueSection } from "../margins/blue-section";
 import { ReactNode } from "react";
 import DevTools from "./devTools";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { faConfluence, faGitAlt, faGithub, faJira, faJs, faNodeJs, faNpm, faPostgresql, faReact, faTypescript, faYarn } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,24 +14,24 @@ interface JobDesProps {
 
 const JobDes = ({ title, company, children, date }: JobDesProps) => {
     return (
-        <BlueSection>
-            <div>
+        <section className="mb-5">
+            <div className="pb-3">
                 <h3>{title}</h3>
-                <div className="d-flex align-items-center gap-2">
-                    <h4>{company}</h4> <h5>({date})</h5>
+                <div className="d-flex flex-column flex-md-row align-items-md-center column-gap-2">
+                    <span className="h4 line-height-1">{company}</span> <span className="h5 line-height-1">({date})</span>
                 </div>
             </div>
             <div>
                 {children}
             </div>
-        </BlueSection>
+        </section>
     )
 }
 
 const WorkExperience = () => {
     return (
-        <Container className="about" id="about">
-            <h2>Work Experience</h2>
+        <div className="about" id="about">
+            <h2 className="mb-4">Work Experience</h2>
             <JobDes
                 title="Project Manager & Software Engineer"
                 company="Freelance"
@@ -63,21 +62,21 @@ const WorkExperience = () => {
                 </p>
             </JobDes>
 
-            <Row>
-                <Col>
+            <Row className="gy-4">
+                <Col lg={6}>
                     <DevTools
-                        title='Languages/Frameworks'
+                        title='Languages & Frameworks'
                         description={[{ icon:faJs, label: 'JavaScript' }, { icon:faTypescript, label: 'TypeScript' }, { icon: faReact, label: 'React.js' }, { icon: faNodeJs, label: 'Node.js' }, { icon:faCode, label: 'Express.js' }, { icon:faPostgresql, label: 'PostgreSQL' }]}
                     />
                 </Col>
-                <Col>
+                <Col lg={6}>
                     <DevTools
-                        title='DevTools'
+                        title='Dev Tools'
                         description={[{icon:faGitAlt, label:'Git'}, {icon:faReact, label:'Jest'}, {icon:faJira, label:'Jira'}, {icon:faConfluence, label:'Confluence'}, {icon:faYarn, label:'yarn'}, {icon:faNpm, label:'npm'}, {icon:faGithub, label:'GitHub'}]}
                     />
                 </Col>
             </Row>
-        </Container>
+        </div>
     )
 }
 export default WorkExperience;

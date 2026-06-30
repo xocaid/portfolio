@@ -16,15 +16,15 @@ interface Props {
 //Used in the About section
 const DevTools = ({ title, description }: Props) => {
     return (
-        <BlueSection>
-            <h2>{title}:</h2>
-            <ul className="list-unstyled d-flex flex-wrap gap-3">{description.map((item, index) => (
-                <li key={index}>
+        <div>
+            <h2 className="mb-4">{title}</h2>
+            <ul className="list-unstyled d-flex justify-content-center flex-wrap gap-3">{description.map((item, index) => (
+                <li key={index} className="fs-4">
                     <FontAwesomeIcon icon={item.icon} /> {item.label}
                 </li>
             ))}
             </ul>
-        </BlueSection>
+        </div>
     )
 }
 export default DevTools;
