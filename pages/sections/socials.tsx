@@ -5,12 +5,12 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Socials = () => {
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center flex-wrap gap-3 row-gap-4 mb-5">
 
             <a href="https://github.com/xocaid/"><FontAwesomeIcon className="social-icon" icon={faGithub} /></a>
             <a href="https://www.linkedin.com/in/xochitlca/"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
-            <div className="d-flex align-items-center">
-                <a href='' className="resume p">Download Resume</a>
+            <div className="d-flex align-items-center flex-wrap">
+                <a href='' className="resume text-nowrap p">Download Resume</a>
             </div>
         </div>
     )
