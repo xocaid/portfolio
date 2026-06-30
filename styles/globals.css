@@ -121,3 +121,7 @@ p,
   background-color: white;
   color: var(--brand-rose-red);
 }
+
+.profile-picture {
+  max-width: 200px;
+}

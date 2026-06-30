@@ -17,7 +17,7 @@ function Home() {
       </Head>
       <Header />
       <Container>
-        <div className="bg-portfolio-yinmn-blue">
+        <div className="bg-portfolio-yinmn-blue p-2 p-md-4">
           <Intro />
           <Socials />
           <WorkExperience />
