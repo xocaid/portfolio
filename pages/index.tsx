@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Xochitl's Portfolio</title>
+        <title>Xochitl&apos;s Portfolio</title>
       </Head>
       <Header />
       <Container>

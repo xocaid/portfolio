@@ -21,7 +21,7 @@ body {
 /* HEADER/FOOTER */
 .header,
 .footer {
-  background: radial-gradient(circle, hsl(41, 89%, 82%) 10%, transparent 11%);
+  /*background: radial-gradient(circle, hsl(41, 89%, 82%) 10%, transparent 11%);*/
   background-size: 1em 1em;
   background-color: var(--brand-dutch-white);
   color: var(--brand-rose-red);

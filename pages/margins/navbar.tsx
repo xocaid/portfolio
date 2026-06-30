@@ -4,7 +4,7 @@ import { Navbar } from "react-bootstrap";
 
 export default function NavBar() {
     return (
-        <Navbar className="justify-content-end nav-font">
+        <Navbar className="justify-content-center justify-content-md-end nav-font">
             <Nav>
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#about">About</Nav.Link>

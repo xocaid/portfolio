@@ -11,16 +11,17 @@ const Header = () => {
     return (
         <div className="header">
             <Container >
-                <Row className="align-items-center">
-                    <Col>
-                        <div>
+                <Row className="align-items-center gy-3">
+                    <Col md={6}>
+                        <div className="text-center text-md-start">
                             <img
+                                alt="XC - Software Engineer"
                                 className="logo-rect w-75"
                                 src='/images/logo_rectangle.svg' />
                         </div>
                     </Col>
 
-                    <Col>
+                    <Col md={6}>
                         <NavBar />
                     </Col>
 
